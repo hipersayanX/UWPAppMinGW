@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
+    <Identity
+        Name="UWPApp.App"
+        Version="1.0.0.0"
+        ProcessorArchitecture="x64"
+        Publisher="CN=MyCompany, O=MyCompany, L=MyCity, S=MyState, C=MyCountry" />
+    <Properties>
+        <DisplayName>UWPApp</DisplayName>
+        <PublisherDisplayName>MyCompany</PublisherDisplayName>
+        <Description>UWP test application</Description>
+        <Logo>icons/appicon.png</Logo>
+    </Properties>
+    <Resources>
+        <Resource Language="en-US" />
+    </Resources>
+    <Dependencies>
+        <TargetDeviceFamily
+            Name="Windows.Desktop"
+            MinVersion="10.0.14316.0"
+            MaxVersionTested="10.0.19042.572" />
+    </Dependencies>
+    <Capabilities>
+        <rescap:Capability Name="runFullTrust"/>
+    </Capabilities>
+    <Applications>
+        <Application Id="UWPApp" Executable="UWPApp.exe" EntryPoint="Windows.FullTrustApplication">
+            <uap:VisualElements
+                DisplayName="UWPApp"
+                Description="UWP test application"
+                Square150x150Logo="icons/appicon_150x150.png"
+                Square44x44Logo="icons/appicon_44x44.png"
+                BackgroundColor="#000000" />
+        </Application>
+    </Applications>
+</Package>

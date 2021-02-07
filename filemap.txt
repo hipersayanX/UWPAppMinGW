@@ -1,0 +1,9 @@
+[ResourceMetadata]
+"ResourceDimensions" "language-en-us"
+"ResourceId"         "English"
+
+[Files]
+"UWPApp.exe"        "UWPApp.exe"
+"icons\appicon.png" "icon.png"
+"icons\appicon.png" "en-us\logo.png"
+"resources.pri"     "resources.pri"
